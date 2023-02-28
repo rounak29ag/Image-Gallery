@@ -1,0 +1,115 @@
+.app {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .input {
+  padding: 10px 20px;
+  }
+  .input > input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px 20px;
+  }
+  button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(4, 100, 243);
+  }
+  button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 71, 90);
+  }
+  button:active {
+  background-color: cornflowerblue;
+  width: 290px;
+  }
+  .card {
+  padding: 5px;
+  width: auto;
+  height: auto;
+  }
+  .result {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  width: auto;
+  height: auto;
+  }
+  .result > img {
+  flex-wrap: nowrap;
+  margin: 5px;
+  }
+  .username{
+  width: 200px;
+  }
+
+  /* @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap"); */
+
+
+       body{
+        background-color:#eee;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+       }
+
+       .height{
+        height: 100vh;
+       }
+       
+
+       .search{
+       position: relative;
+       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+         
+       }
+
+       .search input{
+
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+
+
+       }
+
+
+       .search input:focus{
+
+        box-shadow: none;
+        border: 2px solid blue;
+
+
+       }
+
+       .search .fa-search{
+
+        position: absolute;
+        top: 20px;
+        left: 16px;
+
+       }
+
+       .search button{
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: blue;
+
+       }
+  @media screen and (max-width: 700px) {
+   .result {
+    display: flex;
+    flex-direction: column;
+   }
+  }
